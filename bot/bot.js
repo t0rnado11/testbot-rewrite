@@ -1,5 +1,8 @@
 const mineflayer = require("mineflayer")
 const Vec3 = require("vec3")
+const addCore = require("../core/core.js")
+const gradient = require("../util/tellraw.js")
+const regex = require("../util/regex.js")
 
 module.exports = function createBot(args) {
   var bot = mineflayer.createBot(args)
@@ -7,7 +10,7 @@ module.exports = function createBot(args) {
   bot.autoRejoin = true
   bot.ownerAuthed = []
   bot.trustAuthed = []
-  bot.ownerHash = ""
+  bot.ownerHash = args.ownerHash
   bot.prefix = "+"
   bot.globalPrefix = "testbot:"
   bot.blacklist = []
