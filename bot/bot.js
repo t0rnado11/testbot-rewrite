@@ -4,13 +4,13 @@ const addCore = require("../core/core.js")
 const gradient = require("../util/tellraw.js")
 const regex = require("../util/regex.js")
 
-module.exports = function createBot(args) {
+module.exports = function createBot(ownerHash, args) {
   var bot = mineflayer.createBot(args)
   bot.onTick = []
   bot.autoRejoin = true
   bot.ownerAuthed = []
   bot.trustAuthed = []
-  bot.ownerHash = args.ownerHash
+  bot.ownerHash = ownerHash
   bot.prefix = "+"
   bot.globalPrefix = "testbot:"
   bot.blacklist = []
