@@ -54,7 +54,7 @@ function getTellraw(txt, col, italic = false, bold = false, underline = false, s
 }
 
 module.exports = {
-  calculateGradient,
-  gradientText,
-  getTellraw
+  calculateGradient: calculateGradient,
+  gradientText: gradientText,
+  getTellraw: getTellraw
 }
