@@ -9,7 +9,7 @@ regex.matchPlayers = (bot, reg) => {
   return false;
 }
 
-regex.isMatch = (str, reg) => {
+regex.match = (str, reg) => {
   return reg.test(str)
 }
 
