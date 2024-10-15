@@ -13,4 +13,8 @@ regex.isMatch = (str, reg) => {
   return reg.test(str)
 }
 
+regex.fromString = (str) => {
+  return new RegExp(str)
+}
+
 module.exports = regex
