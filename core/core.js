@@ -3,7 +3,7 @@ module.exports = function addCore(bot) {
   bot.core = {
     size: [20, 2, 20],
     origin: [0, 0, 0],
-    endPoint = [20, 2, 20]
+    endPoint: [20, 2, 20]
     currentBlock: [0, 0, 0],
     allocated: {
       // Format:
